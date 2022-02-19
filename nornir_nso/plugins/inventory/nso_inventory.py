@@ -33,7 +33,7 @@ def load_yaml(source_file: str) -> Dict[str, Any]:
 
 class NsoInventory:
     def __init__(self,
-                 nso_url : str,
+                 nso_hostname : str,
                  nso_username : str,
                  nso_password : str,
                  port : int = 443,
@@ -41,7 +41,7 @@ class NsoInventory:
                  verify : bool = True,
                  **kwargs
                  ):
-        self.endpoint   = nso_url
+        self.endpoint   = nso_hostname
         self.username   = nso_username
         self.password   = nso_password
         self.protocol   = protocol
