@@ -1,0 +1,4 @@
+authgroup:
+  labadmin:
+    remote-name: cisco
+    remote-password: cisco
